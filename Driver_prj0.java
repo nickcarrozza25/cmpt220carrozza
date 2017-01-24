@@ -9,8 +9,7 @@ CMPT220
 */ 
 
 
-public class Driver_prj0 
-{
+public class Driver_prj0 {
 
   //Main Method
   public static void main (String[] args) {
