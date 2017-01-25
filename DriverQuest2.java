@@ -11,34 +11,34 @@ import java.util.Scanner;
 
 public class DriverQuest2 {
 
-  public static void main (String[] args) {
+    public static void main (String[] args) {
 
-    System.out.println("Please enter the following as percentage ...");
+        System.out.println("Please enter the following as percentage ...");
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-    System.out.print("midterm exam: ");
+        System.out.print("midterm exam: ");
 
-      double midVal = input.nextDouble();
+        double midVal = input.nextDouble();
 
-    System.out.print("final exam: ");
+        System.out.print("final exam: ");
 
-      double finalVal = input.nextDouble();
+        double finalVal = input.nextDouble();
 
-      System.out.print("projects: ");
+        System.out.print("projects: ");
 
-      double projects = input.nextDouble();
+        double projects = input.nextDouble();
 
+        System.out.print("homework and labs: ");
 
-    System.out.print("homework and labs: ");
-
-    double hwLab = input.nextDouble();
-
-    double avg = (midVal + finalVal + projects + hwLab) * .25;
-
-    System.out.print("Your final grade is: " + avg + "%");
+        double hwLab = input.nextDouble();
 
 
-  }
+        double avg = ((midVal * .2) + (finalVal * .2) + (projects * .2) + (hwLab * .4));
+
+        System.out.print("Your final grade is: " + avg + "%");
+
+
+    }
 
 }
