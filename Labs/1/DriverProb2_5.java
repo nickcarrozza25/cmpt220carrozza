@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class DriverProb2_5 {
 
-
+    //main function
     public static void main(String[] args) {
 
         System.out.print("Enter the subtotal and a gratuity rate :");

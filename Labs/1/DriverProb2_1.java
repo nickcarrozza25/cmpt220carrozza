@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class DriverProb2_1 {
 
+    //main function
     public static void main(String[] args) {
 
         System.out.print("Enter a value in degrees celcius:");

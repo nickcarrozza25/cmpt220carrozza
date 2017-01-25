@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class DriverQuest2 {
 
+    //main function
     public static void main (String[] args) {
 
         System.out.println("Please enter the following as percentage ...");
