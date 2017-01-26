@@ -29,7 +29,7 @@ public class DriverProb2_5 {
         double total = subtotal + gratuity;
 
 
-        System.out.print("The gratuity is " + gratuity + "and total is " + total);
+        System.out.print("The gratuity is " + gratuity + " and total is " + total);
 
     }
 }
