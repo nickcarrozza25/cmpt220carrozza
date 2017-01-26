@@ -1,6 +1,8 @@
 /*
 
- Created by nickcarrozza on 1/26/17.
+Lab 1 - Problem 2.6
+
+Created by nickcarrozza on 1/26/17.
 
 */
 
