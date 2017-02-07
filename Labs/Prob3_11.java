@@ -2,11 +2,11 @@ package Labs;
 
 /*
 
-  Created by nickcarrozza on 2/6/17.
+ Created by nickcarrozza on 2/6/17.
 
 */
 
-import java.util.Scanner;
+        import java.util.Scanner;
 
 public class Prob3_11 {
 
@@ -30,9 +30,9 @@ public class Prob3_11 {
 
             case 1:
 
-               month = "January";
+                month = "January";
 
-               break;
+                break;
 
             case 2:
 
@@ -103,8 +103,6 @@ public class Prob3_11 {
 
         }
 
-        System.out.println(month);
-
         switch (month) {
 
 
@@ -116,21 +114,90 @@ public class Prob3_11 {
 
             case "February":
 
-                numDays = 28;
+                if (year % 4 == 0) {
+
+                    numDays = 29;
+
+                } else {
+
+                    numDays = 28;
+
+                }
+
+                break;
 
             case "March":
 
                 numDays = 31;
 
+                break;
+
+            case "April":
+
+                numDays = 30;
+
+                break;
+
+            case "May":
+
+                numDays = 31;
+
+                break;
+
+            case "June":
+
+                numDays = 30;
+
+                break;
+
+            case "July":
+
+                numDays = 31;
+
+                break;
+
+            case "August":
+
+                numDays = 31;
+
+                break;
+
+            case "September":
+
+                numDays = 30;
+
+                break;
+
+            case "October":
+
+                numDays = 31;
+
+                break;
+
+            case "November":
+
+                numDays = 30;
+
+                break;
+
+            case "December":
+
+                numDays = 31;
+
+                break;
 
         }
 
-             System.out.println(numDays);
+        if (year > 2017) {
+
+            System.out.println(month + " " + year + " will have " + numDays + " days");
+
+        } else {
+
+            System.out.println(month + " " + year + " had " + numDays + " days");
 
 
-
-
+        }
 
     }
-
 }
