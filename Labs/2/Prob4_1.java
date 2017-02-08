@@ -1,3 +1,5 @@
+
+
 /*
 
  Created by nickcarrozza on 2/7/17.
@@ -5,8 +7,10 @@
 */
 
 
+
+
 import java.util.Scanner;
-import java.util.Formatter;
+
 
 public class Prob4_1 {
 
@@ -32,3 +36,4 @@ public class Prob4_1 {
 
 
 }
+
