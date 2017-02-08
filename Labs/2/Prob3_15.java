@@ -77,33 +77,17 @@ public class Prob3_15 {
 
                 status = 1;
 
-            } else if (((userOne == randOne)     && ((userOne != randTwo)   && (userOne != randThree)))
+            } else if ( (userOne == randTwo || userOne == randThree)
 
-                    || ((userOne == randTwo)     && ((userOne != randOne)   && (userOne != randThree)))
+                    && (userTwo == randOne || userTwo == randThree)
 
-                    || ((userOne == randThree)   && ((userOne != randTwo)   && (userOne == randOne)))
-
-                    || ((userTwo == randOne)     && ((userTwo != randTwo)   && (userTwo != randThree)))
-
-                    || ((userTwo == randTwo)     && ((userTwo != randOne)   && (userTwo != randThree)))
-
-                    || ((userTwo == randThree)   && ((userTwo != randTwo)   && (userTwo != randOne)))
-
-                    || ((userThree == randOne)   && ((userThree != randTwo) && (userThree != randThree)))
-
-                    || ((userThree == randTwo)   && ((userThree != randOne) && (userThree != randThree)))
-
-                    || ((userThree == randThree) && ((userThree != randOne) && (userThree != randTwo)))) {
+                    && (userThree == randOne || userThree == randTwo)) {
 
                 // to win 3000 dollars
 
                 status = 2;
 
-            } else if ((userOne == randOne || userOne == randTwo || userOne == randThree)
-
-                    || (userTwo == randOne || userTwo == randTwo || userTwo == randThree)
-
-                    || (userThree == randOne || userThree == randTwo || userThree == randThree)) {
+            } else if (false) {
 
                 // to win 1000 dollars
 
@@ -142,8 +126,25 @@ public class Prob3_15 {
 }
 
 
+/*
+
+((userOne == randOne)     && ((userOne != randTwo)   && (userOne != randThree)))
+
+        || ((userOne == randTwo)     && ((userOne != randOne)   && (userOne != randThree)))
+
+        || ((userOne == randThree)   && ((userOne != randTwo)   && (userOne != randOne)))
+
+        || ((userTwo == randOne)     && ((userTwo != randTwo)   && (userTwo != randThree)))
+
+        || ((userTwo == randTwo)     && ((userTwo != randOne)   && (userTwo != randThree)))
+
+        || ((userTwo == randThree)   && ((userTwo != randTwo)   && (userTwo != randOne)))
+
+        || ((userThree == randOne)   && ((userThree != randTwo) && (userThree != randThree)))
+
+        || ((userThree == randTwo)   && ((userThree != randOne) && (userThree != randThree)))
+
+        || ((userThree == randThree) && ((userThree != randOne) && (userThree != randTwo)))
 
 
-
-
-
+*/
