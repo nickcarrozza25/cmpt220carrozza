@@ -26,7 +26,7 @@ public class Prob4_5 {
         double area = (numSides * (Math.pow(sideLength, 2))) / ( 4 * (Math.tan((Math.PI) / numSides)));
 
         System.out.println("The area of the polygon is: " + area);
-        
+
 
     }
 
