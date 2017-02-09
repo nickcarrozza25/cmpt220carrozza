@@ -77,17 +77,21 @@ public class Prob3_15 {
 
                 status = 1;
 
-            } else if ( (userOne == randTwo || userOne == randThree)
+            } else if ( (userOne == randOne || userOne == randTwo || userOne == randThree)
 
-                    && (userTwo == randOne || userTwo == randThree)
+                    && (userTwo == randTwo || userTwo == randOne || userTwo == randThree)
 
-                    && (userThree == randOne || userThree == randTwo)) {
+                    && (userThree == randThree || userThree == randOne || userThree == randTwo)) {
 
                 // to win 3000 dollars
 
                 status = 2;
 
-            } else if (false) {
+            } else if ((userOne == randOne || userOne == randTwo || userOne == randThree)
+
+                    || (userTwo == randTwo || userTwo == randOne || userTwo == randThree)
+
+                    || (userThree == randThree || userThree == randOne || userThree == randTwo) ) {
 
                 // to win 1000 dollars
 
@@ -112,7 +116,9 @@ public class Prob3_15 {
 
                 case 3:
 
-                     System.out.println("Congrats, you've won $1,000" );
+                     System.out.println("Congrats, you've won $1,000!" );
+
+                     break;
 
                 default:
 
