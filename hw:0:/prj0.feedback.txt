@@ -1,0 +1,18 @@
+9 pts
+
+Nicholas,
+
+- Congratulations on passing the judge Kattis!
+
+
+However, 
+
+- Project 0 is in the wrong folder. Please organize your repository! It is in
+  your best interest that I can find your work to grade it. Thanks :)
+
+- Please read the assignment instructions carefully.
+
+
+Peace,
+
+- Dr. Rivas
