@@ -21,17 +21,19 @@ public class Driver_lab3 {
 
         int count = 1;
 
-          while (count % 5 != 0) {
+          while (count < 1000) {
 
                   double a = input.nextDouble();
+
+                  // if the first number the user types is a 0
 
                   if (a == 0) {
 
                       break;
 
-                  } else {
+                  //otherwise take in the next four numbers and compute the answer
 
-                      //count++;
+                  } else {
 
                       double c = input.nextDouble();
 
@@ -40,6 +42,8 @@ public class Driver_lab3 {
                       double d = input.nextDouble();
 
                       double p = input.nextDouble();
+
+                      count++;
 
 
                       if (a < 100 && b < 100 && c < 100 && d < 100 && p < 100) {
