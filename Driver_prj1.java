@@ -42,7 +42,6 @@ public class Driver_prj1 {
         }
 
         //code to flip the first array (flip lista)
-
         int[] aflip = new int[alength];
 
         int m = 1;
@@ -60,18 +59,37 @@ public class Driver_prj1 {
 
         int[] cresult  = new int[resLength];
 
-        /*for(int k = 0; k < cresult.length; k++){
+        for(int idx = 0; idx < resLength; idx++){
+
+            //int shift = 0;
+
+            //run the following loop the "blength" amount of times, or run for every element present in the second loop
+            for(int shift = 0; shift < blength; shift++){
+
+                /*
+                for the first position in the result array (monitored with idx), take the first position in
+                  the second array and multiply it by the last position in the flipped array
+                  idx - shift is used to always account for/ find the last position in the flipped array
+                  as it moves across the stationary or second one
+                */
+
+                try{
+
+                    cresult[idx] += aflip[shift] * blist[idx - shift];
 
 
+                } catch (ArrayIndexOutOfBoundsException e) {
 
+                    //if the array is out of bounds, add nothing to it and keep going
+                    cresult[idx] += 0;
 
-        }*/
+                }
 
+            }
 
+        }
 
-        System.out.println(Arrays.toString(alist));
-        System.out.println(Arrays.toString(blist));
-        System.out.println(Arrays.toString(aflip));
+        System.out.println(Arrays.toString(cresult));
 
     }
 
