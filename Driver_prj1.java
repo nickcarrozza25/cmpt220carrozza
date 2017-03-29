@@ -89,7 +89,12 @@ public class Driver_prj1 {
 
         }
 
-        System.out.println(Arrays.toString(cresult));
+        for (int n = 0; n < resLength; n++){
+
+         System.out.print(cresult[n] + " ");
+
+
+        }
 
     }
 
