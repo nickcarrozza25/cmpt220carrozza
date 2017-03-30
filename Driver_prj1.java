@@ -17,15 +17,15 @@ public class Driver_prj1 {
 
         int blength = input.nextInt();
 
-        int[] alist = new int[alength];
+        double[] alist = new double[alength];
 
-        int[] blist = new int[blength];
+        double[] blist = new double[blength];
 
         //loop to create first array user types in
 
         for(int i = 0; i < alength; i++){
 
-            int nexta = input.nextInt();
+            double nexta = input.nextDouble();
 
             alist[i] = nexta;
 
@@ -35,14 +35,14 @@ public class Driver_prj1 {
 
         for(int j = 0; j < blength; j++){
 
-            int nextb = input.nextInt();
+            double nextb = input.nextDouble();
 
             blist[j] = nextb;
 
         }
 
         //code to flip the first array (flip lista)
-        int[] aflip = new int[alength];
+        double[] aflip = new double[alength];
 
         int m = 1;
 
@@ -57,7 +57,7 @@ public class Driver_prj1 {
         //create the result array and declare its size by calculating
         int resLength = (alength + blength) - 1;
 
-        int[] cresult  = new int[resLength];
+        double[] cresult  = new double[resLength];
 
         for(int idx = 0; idx < resLength; idx++){
 
@@ -91,7 +91,7 @@ public class Driver_prj1 {
 
         for (int n = 0; n < resLength; n++){
 
-         System.out.print(cresult[n] + " ");
+         System.out.print((int)cresult[n] + " ");
 
 
         }
