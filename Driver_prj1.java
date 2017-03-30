@@ -91,7 +91,7 @@ public class Driver_prj1 {
 
         for (int n = 0; n < resLength; n++){
 
-         System.out.print((int)cresult[n] + " ");
+         System.out.print(Math.round(cresult[n]) + " ");
 
 
         }
