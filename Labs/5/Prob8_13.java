@@ -49,9 +49,6 @@ public class Prob8_13 {
 
                 matrix[rowCount][colCount] = userElem;
 
-                //this is simply used to print the elements for testing purposes
-                System.out.print(matrix[i][j] + " ");
-
                 colCount++;
 
             }
@@ -93,25 +90,20 @@ public class Prob8_13 {
 
         }
 
-        System.out.println(Arrays.toString(highest));
-
-
         //create a loop to determine the largest element in the "highest" array
 
         //initialize the max checker variable to 0
         double highMax = highest[0];
 
-        for (int m = 1; m < highest.length; m++) {
+         for (int m = 1; m < highest.length; m++) {
 
             if (highest[m] > highMax) {
 
                 highMax = highest[m];
 
-            }
+             }
 
-        }
-
-        System.out.println(highMax);
+         }
 
         /* Determine the position of the max element:
         -create a boolean variable to determine whether it is reached or not
@@ -120,13 +112,13 @@ public class Prob8_13 {
         */
 
         //initialize max checker to false
-        int val1 = 0;
+          int val1 = 0;
 
-        int val2 = 0;
+          int val2 = 0;
 
-        int n = 0;
+          int n = 0;
 
-        int p = 0;
+          int p = 0;
 
         //create loop to check at what index the max element exists at
         //determine the position where the current value equals highMax\
