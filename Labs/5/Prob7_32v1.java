@@ -1,6 +1,23 @@
+  /**
+   * file: Prob7_32v1.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 5
+   * due date: March 30, 2017
+   * version: 2.1
+   * 
+   * This file contains the driver and main method for 
+   * problem 7.32.
+   */
+
+
 /**
- * Created by nickcarrozza on 3/30/17.
- */
+   * Prob7_32v1
+   * 
+   * This class declares the driver and includes main method for running 
+   * problem 7.32. 
+   */
+
 
 import java.util.Scanner;
 import java.util.Arrays;
@@ -8,25 +25,25 @@ import java.util.Arrays;
 
     public class Prob7_32v1 {
 
-        public static void main(String[] args) {
+      public static void main(String[] args) {
 
-            Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-            int qty = input.nextInt();
+          int qty = input.nextInt();
 
-            int[] list = new int[qty];
+          int[] list = new int[qty];
 
-            int i = 0;
+          int i = 0;
 
-            while (i < qty) {
+          while (i < qty) {
 
-                int user = input.nextInt();
+            int user = input.nextInt();
 
-                list[i] = user;
+            list[i] = user;
 
-                i++;
+            i++;
 
-            }
+          }
 
             int pivot = list[0];
 
@@ -40,14 +57,14 @@ import java.util.Arrays;
 
             for(int j = 1; j < list.length; j++) {
 
-                if(list[j] > pivot){
+              if (list[j] > pivot){
 
-                    highCount++;
+                highCount++;
 
-                } else {
+              } else {
 
-                    lowCount++;
-                }
+                  lowCount++;
+              }
 
             }
 
@@ -61,18 +78,18 @@ import java.util.Arrays;
 
             for (int j = 1; j < list.length; j++) {
 
-                if (list[j] <= pivot){
-                    //place it in the before array
+              if (list[j] <= pivot){
+                //place it in the before array
 
-                    before[bIdx] = list[j];
+                  before[bIdx] = list[j];
 
-                    bIdx++;
+                  bIdx++;
 
                 } else {
 
-                    after[aIdx] = list[j];
+                  after[aIdx] = list[j];
 
-                    aIdx++;
+                  aIdx++;
 
                 }
 
@@ -92,10 +109,9 @@ import java.util.Arrays;
             //first loop created to fill result array for before values
             for (int k = 0; k < before.length; k++){
 
-                result[k] = before[k];
+              result[k] = before[k];
 
-                track++;
-
+              track++;
 
             }
 
@@ -109,9 +125,9 @@ import java.util.Arrays;
             //second loop is to complete the result array filling in the after values
             for (int l = 0; l < after.length; l++){
 
-                result[track] = after[l];
+              result[track] = after[l];
 
-                track++;
+              track++;
             }
 
 

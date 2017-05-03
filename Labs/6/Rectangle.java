@@ -1,9 +1,21 @@
-/*
+/**
+   * file: Rectangle.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 6, Problem 9.1
+   * due date: April 20, 2017 
+   * version: 1 
+   * 
+   * This file contains the code for the creation of 
+   * an class Rectangle 
+   */
 
-Problem 9.1
-Create a circle object with two instances
-
-*/
+/**
+   * Rectangle
+   * 
+   * This class implements a blueprint for creating a rectangle 
+   * with data types width and height, for instance 
+   */
 
 public class Rectangle {
 

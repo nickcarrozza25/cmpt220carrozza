@@ -1,9 +1,20 @@
-/*
-Lab 6
-Problem 9.13
-Design a location class with row, column and maxValue as data fields
+/**
+   * file: Location.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 6, Problem 9.13
+   * due date: April 2o, 2017
+   * version: 1
+   * 
+   * This file contains the creation of a Location class.
+   */
 
-*/
+/**
+   * Location
+   * 
+   * This class includes a 2D array and serves to represent the 
+   * positon in that array where the largest element exists. 
+   */
 
 
 import java.util.Scanner;
@@ -20,13 +31,13 @@ public class Location {
 
     public static void main(String[] args) {
 
-        Scanner rolCol = new Scanner(System.in);
+      Scanner rolCol = new Scanner(System.in);
 
-        System.out.print("Enter the number of rows and columns in the array: ");
+      System.out.print("Enter the number of rows and columns in the array: ");
 
-        int rowInput = rolCol.nextInt();
+      int rowInput = rolCol.nextInt();
 
-        int colInput = rolCol.nextInt();
+      int colInput = rolCol.nextInt();
 
         //create new instance of location
         Location loc1 = new Location();
@@ -45,11 +56,11 @@ public class Location {
         //nested for loop to create the user matrix "list"
         for(int i = 0; i < rowInput; i++){
 
-            for(int j = 0; j < colInput; j++){
+          for(int j = 0; j < colInput; j++){
 
-                double matrixValue = matrixInput.nextDouble();
+            double matrixValue = matrixInput.nextDouble();
 
-                list[i][j] = matrixValue;
+              list[i][j] = matrixValue;
 
             }
 
@@ -80,35 +91,36 @@ public class Location {
 
     public static Location locateLargest(double[][] a) {
 
-        int i;
+      int i;
 
-        //declare variables to keep track of
-        int rowIdx = 0;
-
-
-        //declare variables to capture index at the max value
-        int maxrowIdx = 0;
-
-        int maxcolIdx = 0;
+      //declare variables to keep track of
+      int rowIdx = 0;
 
 
-        double maxValue;
+      //declare variables to capture index at the max value
+      int maxrowIdx = 0;
+
+      int maxcolIdx = 0;
 
 
-        //nested loop to compare the max value to every element in the array
-        for (int h = 0; h < a.length; h++) {
+      double maxValue;
 
-            for (i = 0; i < a[rowIdx].length; i++) {
 
-                maxValue = a[rowIdx][0];
+      //nested loop to compare the max value to every element in the array
+       for (int h = 0; h < a.length; h++) {
 
-                if (a[rowIdx][i] > maxValue) {
+         for (i = 0; i < a[rowIdx].length; i++) {
 
-                    maxValue = a[rowIdx][i];
+           maxValue = a[rowIdx][0];
 
-                    maxrowIdx = rowIdx;
+             if (a[rowIdx][i] > maxValue) {
 
-                    maxcolIdx = i;
+                maxValue = a[rowIdx][i];
+
+                maxrowIdx = rowIdx;
+
+                maxcolIdx = i;
+
                 }
 
             }

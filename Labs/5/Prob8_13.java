@@ -1,10 +1,23 @@
-/*
+  /**
+   * file: Prob8_13.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 5
+   * due date: March 30, 2017
+   * version: 1
+   * 
+   * This file contains the driver and main method for 
+   * problem 8.13 for lab 5
+   */
 
-  Problem 8.13 for Lab 7
 
-  
+/**
+   * Prob8_13
+   * 
+   * This class declares the driver and includes main method for running 
+   * problem 8.13. 
+   */
 
-*/
 
 import java.util.*;
 import java.lang.Math;
@@ -12,46 +25,46 @@ import java.lang.Math;
 
 public class Prob8_13 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        Scanner rowCol = new Scanner(System.in);
+    Scanner rowCol = new Scanner(System.in);
 
-        System.out.print("Enter the number of rows and columns of the array: ");
+    System.out.print("Enter the number of rows and columns of the array: ");
 
-        int rows = rowCol.nextInt();
+    int rows = rowCol.nextInt();
 
-        int col = rowCol.nextInt();
+    int col = rowCol.nextInt();
 
-        double[][] matrix = new double[rows][col];
+    double[][] matrix = new double[rows][col];
 
-        Scanner elements = new Scanner(System.in);
+    Scanner elements = new Scanner(System.in);
 
-        System.out.print("Enter the array: ");
+    System.out.print("Enter the array: ");
 
-        /* Create the Matrix:
-        nested for loop to create the matrix, beginning with filling the first row
-        for col # of times then moving down a row and doing the same. Begin by intializing
-        a row and col count to assign the next user input value to the next position in the
-        matrix.
-        */
+    /* Create the Matrix:
+    nested for loop to create the matrix, beginning with filling the first row
+    for col # of times then moving down a row and doing the same. Begin by intializing
+    a row and col count to assign the next user input value to the next position in the
+    matrix.
+    */
 
-        int rowCount = 0;
+      int rowCount = 0;
 
-        int colCount;
+      int colCount;
 
-        for (int i = 0; i < rows; i++) {
+      for (int i = 0; i < rows; i++) {
 
-            colCount = 0;
+        colCount = 0;
 
-            for (int j = 0; j < col; j++) {
+        for (int j = 0; j < col; j++) {
 
-                double userElem = elements.nextDouble();
+          double userElem = elements.nextDouble();
 
-                matrix[rowCount][colCount] = userElem;
+            matrix[rowCount][colCount] = userElem;
 
-                colCount++;
+            colCount++;
 
-            }
+        }
 
             rowCount++;
 
@@ -73,15 +86,16 @@ public class Prob8_13 {
 
         for (int k = 0; k < rows; k++) {
 
-            //initialize the current max at each iteration to the element in the
-            //first position at the given k row
-            currentMax = matrix[k][0];
+        //initialize the current max at each iteration to the element in the
+        //first position at the given k row
+          currentMax = matrix[k][0];
 
             for (int l = 0; l < col; l++) {
 
-                if (matrix[k][l] > currentMax) {
+              if (matrix[k][l] > currentMax) {
 
-                    currentMax = matrix[k][l];
+                currentMax = matrix[k][l];
+
                 }
 
             }
@@ -97,9 +111,9 @@ public class Prob8_13 {
 
          for (int m = 1; m < highest.length; m++) {
 
-            if (highest[m] > highMax) {
+           if (highest[m] > highMax) {
 
-                highMax = highest[m];
+             highMax = highest[m];
 
              }
 
@@ -126,18 +140,17 @@ public class Prob8_13 {
 
             for(n = 0; n < rows; n++) {
 
-                    for (p = 0; p < col; p++) {
+              for (p = 0; p < col; p++) {
 
-                            if (matrix[n][p] == highMax) {
+                if (matrix[n][p] == highMax) {
 
-                                val1 = n;
+                  val1 = n;
 
-                                val2 = p;
+                  val2 = p;
 
-                            }
-                         }
-
-                     }
+                }
+              }
+            }
 
         System.out.println("The location of the largest element is at: (" + val1 + "," + val2 + ")");
 

@@ -1,12 +1,23 @@
-/*
+  /**
+   * file: Prob5_13.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 3
+   * due date: February 23, 2017
+   * version: 1
+   * 
+   * This file contains the driver and main method for 
+   * problem 5.13 for lab 3, determine the largest integer whose
+   * square is less than 12000 
+   */
 
- Created by nickcarrozza on 2/21/17
-
- Problem 5.13
-
- find the largest integer such that n^2 is less than 12000
-
- */
+/**
+   * Prob5.13
+   * 
+   * This class declares the driver and includes main method for running 
+   * problem 5.13, determine the largest integer whose
+   * square is less than 12000 
+   */
 
 
 public class Prob5_13 {
