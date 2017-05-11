@@ -1,9 +1,21 @@
-/*
+ /**
+   * file: 4_15.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 2
+   * due date: February 1, 2017
+   * version: 1
+   * 
+   * This file contains the driver for problem 4.15 for Lab 2.
+   */
+/**
+   * Prob4_15
+   * 
+   * This class implements the driver for problem 4.15 for lab 2
+   */
 
-  Prob 4.15
-  Find the corresponding number on a phone key pad from user input letter
 
-*/
+
 
 import java.util.Scanner;
 

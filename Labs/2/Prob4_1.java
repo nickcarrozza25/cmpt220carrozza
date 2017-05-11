@@ -1,10 +1,20 @@
+ /**
+   * file: 4_1.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 2
+   * due date: February 1, 2017
+   * version: 1
+   * 
+   * This file contains the driver for problem 4.1 for Lab 2.
+   */
+/**
+   * Prob4_1
+   * 
+   * This class implements the driver for problem 4.1 for lab 2
+   */
 
 
-/*
-
- Created by nickcarrozza on 2/7/17.
-
-*/
 
 
 

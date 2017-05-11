@@ -1,10 +1,21 @@
-/*
+ /**
+   * file: 4_25.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 2
+   * due date: February 1, 2017
+   * version: 1
+   * 
+   * This file contains the driver for problem 4.25 for Lab 2.
+   */
+/**
+   * Prob4_25
+   * 
+   * This class implements the driver for problem 4.25 for lab 2
+   */
 
-Lab 2
-Problem 4.25
-Generate a random plate number with three letters followed by four digits
 
-*/
+
 
 import java.util.Scanner;
 import java.lang.Math;

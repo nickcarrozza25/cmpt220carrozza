@@ -1,10 +1,21 @@
-/*
+ /**
+   * file: 4_10.java
+   * author: Nick Carrozza
+   * course: CMPT 220
+   * assignment: Lab 2
+   * due date: February 1, 2017
+   * version: 1
+   * 
+   * This file contains the driver for problem 4.10 for Lab 2.
+   */
+/**
+   * Prob4_10
+   * 
+   * This class implements the driver for problem 4.10 for lab 2
+   */
 
-Lab 2
-Prob 4.10
-Rewrite Guess Birthday Program using Y/N strings instead of 0/1
 
-*/
+
 
 
 import java.util.Scanner;
