@@ -28,7 +28,7 @@ public class Prob7_31 {
 
   public static void main(String[] args){
 
-  //create first instance of scanner to allow for first stream of numbers
+    //create first instance of scanner to allow for first stream of numbers
     Scanner firstList = new Scanner (System.in);
 
     System.out.print("Enter list1: ");

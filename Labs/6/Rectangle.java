@@ -19,25 +19,25 @@
 
 public class Rectangle {
 
-    //data fields for the Rectangle class of objects
-    double width = 1;
+//data fields for the Rectangle class of objects
+  double width = 1;
 
-    double height = 1;
+  double height = 1;
 
   public static void main(String[] args){
 
-        //create first rectangle "rect1"
-        Rectangle rect1 = new Rectangle();
+    //create first rectangle "rect1"
+    Rectangle rect1 = new Rectangle();
 
-        rect1.height = 40;
+      rect1.height = 40;
 
-        rect1.width = 4;
+      rect1.width = 4;
 
-        //print information for first rectangle
-          System.out.println(rect1.height);
-          System.out.println(rect1.width);
-          System.out.println(rect1.getArea());
-          System.out.println(rect1.getPerimeter());
+      //print information for first rectangle
+        System.out.println(rect1.height);
+        System.out.println(rect1.width);
+        System.out.println(rect1.getArea());
+        System.out.println(rect1.getPerimeter());
 
         //create second rectangle rect2
 
@@ -48,10 +48,10 @@ public class Rectangle {
           rect2.width = 3.5;
 
             //print information for second rectangle
-              System.out.println(rect2.height);
-              System.out.println(rect2.width);
-              System.out.println(rect2.getArea());
-              System.out.println(rect2.getPerimeter());
+            System.out.println(rect2.height);
+            System.out.println(rect2.width);
+            System.out.println(rect2.getArea());
+            System.out.println(rect2.getPerimeter());
 
   }
 

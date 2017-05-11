@@ -88,7 +88,7 @@ public class Prob8_13 {
 
         //initialize the current max at each iteration to the element in the
         //first position at the given k row
-          currentMax = matrix[k][0];
+        currentMax = matrix[k][0];
 
             for (int l = 0; l < col; l++) {
 
@@ -111,7 +111,7 @@ public class Prob8_13 {
 
          for (int m = 1; m < highest.length; m++) {
 
-           if (highest[m] > highMax) {
+          if (highest[m] > highMax) {
 
              highMax = highest[m];
 

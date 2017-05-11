@@ -22,12 +22,12 @@ import java.util.Arrays;
 
 public class Location {
 
-    //data fields for Location class
-    int row = 0;
+  //data fields for Location class
+  int row = 0;
 
-    int column = 0;
+  int column = 0;
 
-    double maxValue = 0;
+  double maxValue = 0;
 
     public static void main(String[] args) {
 
@@ -127,8 +127,6 @@ public class Location {
 
             rowIdx++;
         }
-
-
 
        return new Location();
     }

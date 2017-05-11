@@ -52,7 +52,7 @@ public class Queue {
   int dequeue(){
 
     //declare variable that removes an element from the queue
-     int removed = elements[0];
+    int removed = elements[0];
 
      //loop that takes every element in the queue and shifts it one position to the left
     //a.k.a., remove one and recreate array starting with second element

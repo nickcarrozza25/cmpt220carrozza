@@ -42,7 +42,7 @@ public class Prob7_20 {
 
      System.out.println(Arrays.toString(userArray));
 
-        //nested for loop to sort the array
+       //nested for loop to sort the array
 
         int maxIdx;
 
@@ -74,9 +74,7 @@ public class Prob7_20 {
 
         }
 
-
       //System.out.println(Arrays.toString(userArray));
-
 
     }
 

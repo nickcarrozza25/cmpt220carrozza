@@ -23,50 +23,51 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 
-    public class Prob7_32v1 {
+public class Prob7_32v1 {
+  
+  public static void main(String[] args) {
 
-      public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
 
-        Scanner input = new Scanner(System.in);
+    int qty = input.nextInt();
 
-          int qty = input.nextInt();
+    int[] list = new int[qty];
 
-          int[] list = new int[qty];
+    int i = 0;
 
-          int i = 0;
+      while (i < qty) {
 
-          while (i < qty) {
+        int user = input.nextInt();
 
-            int user = input.nextInt();
+          list[i] = user;
 
-            list[i] = user;
+          i++;
 
-            i++;
+      }
+
+        int pivot = list[0];
+
+        int highCount = 0;
+
+        int lowCount = 0;
+
+
+        //need to count how many are higher and how many are lower in order to determine size
+        //of the lower values array and higher values array
+
+        for(int j = 1; j < list.length; j++) {
+
+          if (list[j] > pivot){
+
+            highCount++;
+
+          } else {
+
+              lowCount++;
+
+           }
 
           }
-
-            int pivot = list[0];
-
-            int highCount = 0;
-
-            int lowCount = 0;
-
-
-            //need to count how many are higher and how many are lower in order to determine size
-            //of the lower values array and higher values array
-
-            for(int j = 1; j < list.length; j++) {
-
-              if (list[j] > pivot){
-
-                highCount++;
-
-              } else {
-
-                  lowCount++;
-              }
-
-            }
 
             int[] before = new int[lowCount];
 
@@ -79,9 +80,9 @@ import java.util.Arrays;
             for (int j = 1; j < list.length; j++) {
 
               if (list[j] <= pivot){
-                //place it in the before array
+              //place it in the before array
 
-                  before[bIdx] = list[j];
+                before[bIdx] = list[j];
 
                   bIdx++;
 
@@ -103,8 +104,6 @@ import java.util.Arrays;
 
             //create a track variable to check what position in the result array you are in
             int track = 0;
-
-
 
             //first loop created to fill result array for before values
             for (int k = 0; k < before.length; k++){
