@@ -1,0 +1,13 @@
+37 pts
+
+The project attempts to make a database for managing clubs.
+The idea has good merit. 
+
+However, there are some issues...
+Code:
+- There are bugs still. -1pt
+
+- There is incorrect indentation. -1pt
+
+Overall:
+- Decent work average of an SD1 student. -1pt
